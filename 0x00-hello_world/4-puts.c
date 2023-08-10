@@ -2,9 +2,12 @@
 #include <string.h>
 /**
  * main - this is my first function in C
+ *
+ * Return: this fuction will return zero
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
-	return 0;
+	
+	return (0);
 }    
