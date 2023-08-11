@@ -12,7 +12,7 @@ int main(void)
 
 	i = 0;
 
-	while (i <= 98)
+	while (i <= 99)
 	{
 		int j;
 
@@ -27,7 +27,7 @@ int main(void)
 				putchar((j / 10) + '0');
 				putchar((j % 10) + '0');
 
-				if (i != 98 && j != 99)
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
