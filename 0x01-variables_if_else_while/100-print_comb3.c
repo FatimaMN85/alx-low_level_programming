@@ -15,6 +15,7 @@ int main(void)
 	while (i <= 9)
 	{
 		int j;
+	
 		j = i + 1;
 		while (j <= 9)
 		{
