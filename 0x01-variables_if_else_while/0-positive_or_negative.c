@@ -4,8 +4,8 @@
 #include <time.h>
 
 /**
- * main - This function will assign a random number to variable n each time it is executed.
- * It will test whether the number stored in the variable n is positive or negative.
+ * main -will assign a random number to n each time it is executed.
+ * will test whether the number stored in n is positive or negative.
  *
  * Return: this function will return zero
  */
