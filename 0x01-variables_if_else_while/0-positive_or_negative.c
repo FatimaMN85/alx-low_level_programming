@@ -4,7 +4,8 @@
 #include <time.h>
 
 /**
- * main - This function will assign a random number to variable n each time it is executed. It will test whether the number stored in the variable n is positive or negative.
+ * main - This function will assign a random number to variable n each time it is executed.
+ * It will test whether the number stored in the variable n is positive or negative.
  *
  * Return: this function will return zero
  */
@@ -16,15 +17,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("is positive\n");
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("is negative\n");
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
