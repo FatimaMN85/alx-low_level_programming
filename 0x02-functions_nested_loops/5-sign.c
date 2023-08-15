@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
+/**
  * print_sign - This function will prints the sign of a number
  *
  * @n: the number to be checked
