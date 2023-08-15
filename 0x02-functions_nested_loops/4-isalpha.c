@@ -1,7 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * isalpha - this function will checks for alphabetic character
+ * _isalpha - this function will checks for alphabetic character
  * @c: the character to be checked
  * Return:  1 if the character lower or upper. 0 otherwise
  */
