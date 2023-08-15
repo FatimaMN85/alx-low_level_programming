@@ -3,7 +3,8 @@
 #include <string.h>
 
 /*
- * print_sign - this function will prints the sign of a number.
+ * print_sign - This function will prints the sign of a number
+ *
  * @n: the number to be checked
  * Return: 1 if n is greater than zero. 0 if n is zero otherwise -1
  */
