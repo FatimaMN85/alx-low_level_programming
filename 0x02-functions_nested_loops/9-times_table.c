@@ -2,7 +2,7 @@
 
 /**
  * times_table - prints the 9 times table, starting with 0
- * 
+ *
  * Return: will return 0
  */
 void times_table(void)
@@ -18,7 +18,7 @@ void times_table(void)
 			res = i * j;
 			if (j == 0)
 			{
-				_putchar(res +'0');
+				_putchar(res + '0');
 			}
 			if (res < 10 && j != 0)
 			{
