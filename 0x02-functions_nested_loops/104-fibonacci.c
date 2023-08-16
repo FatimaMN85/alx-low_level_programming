@@ -18,7 +18,8 @@ int main(void)
 
 	printf("%lu", prev1);
 
-	for (i = 1; i < 91; i++) {
+	for (i = 1; i < 91; i++)
+	{
 		printf(", %lu", prev2);
 		prev2 += prev1;
 		prev1 = prev2 - prev1;
@@ -29,7 +30,8 @@ int main(void)
 	after1 = (prev2 / limit);
 	after2 = (prev2 % limit);
 
-	for (i = 92; i < 99; ++i) {
+	for (i = 92; i < 99; ++i)
+	{
 		printf(", %lu", after1 + (after2 / limit));
 		printf("%lu", after2 % limit);
 		after1 = after1 + before1;
