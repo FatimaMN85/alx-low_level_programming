@@ -12,11 +12,13 @@ int main(void)
 	count = 98;
 	first = 1;
 	second = 2;
+	printf("%lu, %lu, ", first, second);
+	
 	for (i = 0; i < count; i++)
 	{
 		next = first + second;
-                first = second;
-                second = next;
+		first = second;
+		second = next;
 
 		if (i != 0)
 		{
