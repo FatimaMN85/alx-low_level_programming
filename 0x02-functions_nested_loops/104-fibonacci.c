@@ -7,24 +7,35 @@
  */
 int main(void)
 {
-	unsigned long int count, i, first, second, next;
+	unsigned long int i;
+	unsigned long int prev1 = 1;
+	unsigned long int prev2 = 2;
+	unsigned long int limit = 1000000000;
+	unsigned long int before1;
+	unsigned long int before2;
+	unsigned long int after1;
+	unsigned long int after2;
 
-	count = 98;
-	first = 1;
-	second = 2;
-	printf("%lu, %lu, ", first, second);
-	
-	for (i = 0; i < count; i++)
-	{
-		next = first + second;
-		first = second;
-		second = next;
+	printf("%lu", prev1);
 
-		if (i != 0)
-		{
-			printf(", ");
-		}
-		printf("%lu", next);
+	for (i = 1; i < 91; i++) {
+		printf(", %lu", prev2);
+		prev2 += prev1;
+		prev1 = prev2 - prev1;
+	}
+
+	before1 = (prev1 / limit);
+	before2 = (prev1 % limit);
+	after1 = (prev2 / limit);
+	after2 = (prev2 % limit);
+
+	for (i = 92; i < 99; ++i) {
+		printf(", %lu", after1 + (after2 / limit));
+		printf("%lu", after2 % limit);
+		after1 = after1 + before1;
+		before1 = after1 - before1;
+		after2 = after2 + before2;
+		before2 = after2 - before2;
 	}
 	printf("\n");
 
