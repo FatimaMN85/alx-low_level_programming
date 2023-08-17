@@ -5,8 +5,13 @@
  * mul - multiplies two integers.
  * @a: first number
  * @b: second number
+ * Return: multiple
  */
 int mul(int a, int b)
 {
-	return (a * b);
+	int result;
+
+	result = (a * b);
+
+	return (result);
 }
