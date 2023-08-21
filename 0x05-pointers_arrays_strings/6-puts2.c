@@ -9,15 +9,11 @@
  */
 void puts2(char *str)
 {
-	int i, len;
+	int i;
 
-	len = strlen(str);
-	for (i = 0; i <= len; i++)
+	for (i = 0; str[i] != '\0'; i+=2)
 	{
-		if (str[i] % 2 == 0)
-		{
-			printf("%c", str[i]);
-		}
+		printf("%c", str[i]);
 	}
 	printf("\n");
 }
