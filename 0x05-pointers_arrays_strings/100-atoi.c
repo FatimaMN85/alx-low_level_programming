@@ -1,7 +1,5 @@
 #include "main.h"
 #include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _atoi - convert a string to an integer.
@@ -21,7 +19,7 @@ int _atoi(char *s)
 	{
 		totalDigits++;
 	}
-	while (index < totalDigits && !foundDigits)
+	while (index < totalDigits && foundDigits == 0)
 	{
 		if (s[index] == '-')
 		{
@@ -44,7 +42,7 @@ int _atoi(char *s)
 		}
 		index++;
 	}
-	if (!foundDigits)
+	if (foundDigits == 0)
 	{
 		return 0;
 	}
