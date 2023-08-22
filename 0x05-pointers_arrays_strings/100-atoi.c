@@ -46,7 +46,7 @@ int _atoi(char *s)
 	}
 	if (foundDigits == 0)
 	{
-		return 0;
+		return (0);
 	}
 
 	return (num);
