@@ -4,17 +4,19 @@
 /**
  * _atoi - convert a string to an integer.
  * @s: the string
+ *
  * Return: integer
  */
 int _atoi(char *s)
 {
-	int index, signCount, totalDigits, num, foundDigits;
+	int index, signCount, totalDigits, num, foundDigits, digit;
 
 	index = 0;
 	signCount = 0;
 	totalDigits = 0;
 	num = 0;
 	foundDigits = 0;
+	digit = 0;
 	while (s[totalDigits] != '\0')
 	{
 		totalDigits++;
@@ -27,7 +29,7 @@ int _atoi(char *s)
 		}
 		if (s[index] >= '0' && s[index] <= '9')
 		{
-			int digit = s[index] - '0';
+			digit = s[index] - '0';
 			if (signCount % 2)
 			{
 				digit = -digit;
