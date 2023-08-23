@@ -6,6 +6,7 @@
  * @dest: first str
  * @src: second str
  * @n: bytes
+ * Return: pointer
  */
 char *_strncat(char *dest, char *src, int n)
 {
