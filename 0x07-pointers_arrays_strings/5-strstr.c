@@ -1,7 +1,7 @@
 #include <stddef.h>
 
 /**
- * *_strstr -  locates a substring.
+ * *_strstr - locates a substring.
  * @haystack: first args
  * @needle: second args
  */
