@@ -9,16 +9,20 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
+	if (s == NULL || accept == NULL)
+	{
+		return (NULL);
+	}
 	while (*s != '\0')
 	{
-		char *a = accept;
-		while (*a != '\0')
+		char *ptr = accept;
+		while (*ptr != '\0')
 		{
-			if (*s == *a)
+			if (*s == *ptr)
 			{
-				return (s);
+				return s;
 			}
-			a++;
+			ptr++;
 		}
 		s++;
 	}
