@@ -18,9 +18,9 @@ int is_prime(int n, int d)
 	}
 	if (n % d == 0)
 	{
-		return 0;
+		return (0);
 	}
-	return (is_prime(n, d -1));
+	return (is_prime(n, d - 1));
 }
 
 /**
