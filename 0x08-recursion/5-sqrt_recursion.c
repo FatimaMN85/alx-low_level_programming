@@ -2,7 +2,7 @@
 
 int root(int n, int x);
 /**
- * square_root - Calculate the square root using recursion.
+ * root - Calculate the square root using recursion.
  * @n: the number to find the square root.
  * @x: the current guess for the square root.
  * Return: the square root of n.
