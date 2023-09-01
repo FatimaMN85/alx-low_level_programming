@@ -1,19 +1,15 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * _isdigit - checks for a digit (0 through 9)
- * @c: the number to check
- * Return: 1 if c is a digit otherwise 0
+ * _isdigit - checks for digit (0 through 9)
+ * @c: to check the letter
+ * Return: if digit 1, else 0
  */
+
 int _isdigit(int c)
 {
-	if (isdigit(c))
-	{
+	if (c >= '0' && c <= '9')
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }

@@ -1,52 +1,44 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _atoi - convert a string to an integer.
- * @s: the string
- *
- * Return: integer
+ * _atoi - comvert a sting to an integer
+ * @s: to check
+ * Return: 0 if there is no number in string
  */
+
 int _atoi(char *s)
 {
-	int index, signCount, totalDigits, num, foundDigits, digit;
+	int leng = 0, a = 0, b = 0, c = 0, d = 0, h = 0;
 
-	index = 0;
-	signCount = 0;
-	totalDigits = 0;
-	num = 0;
-	foundDigits = 0;
-	digit = 0;
-	while (s[totalDigits] != '\0')
+	while (s[leng] != '\0')
 	{
-		totalDigits++;
+		leng++;
 	}
-	while (index < totalDigits && foundDigits == 0)
+	while (a < leng && b == 0)
 	{
-		if (s[index] == '-')
+		if (s[a] == '-')
 		{
-			++signCount;
+			++c;
 		}
-		if (s[index] >= '0' && s[index] <= '9')
+
+		if (s[a] >= '0' && s[a] <= '9')
 		{
-			digit = s[index] - '0';
-			if (signCount % 2)
+			d = s[a] - '0';
+			if (c % 2)
 			{
-				digit = -digit;
+				d = -d;
 			}
-			num = num * 10 + digit;
-			foundDigits = 1;
-			if (s[index + 1] < '0' || s[index + 1] > '9')
+			h = h * 10 + d;
+			b = 1;
+			if (s[a + 1] < '0' || s[a + 1] > '9')
 			{
 				break;
 			}
-			foundDigits = 0;
+			b = 0;
 		}
-		index++;
+		a++;
 	}
-	if (foundDigits == 0)
-	{
+	if (b == 0)
 		return (0);
-	}
-	return (num);
+	return (h);
 }
