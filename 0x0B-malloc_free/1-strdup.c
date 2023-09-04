@@ -9,18 +9,21 @@
  */
 char *_strdup(char *str)
 {
-	size_t size = strlen(str) + 1;
-	char *nstr = malloc(size);
+	size_t size;
+	char *nstr;
+
+	if (str == NULL)
+        {
+                return (NULL);
+        }
+
+	size = strlen(str) + 1;
+	nstr = malloc(size);
 
 	if (nstr == NULL)
-	{
-		return (NULL);
-	}
-
-	if (nstr == NULL)
-	{
-		return (NULL);
-	}
+        {
+                return (NULL);
+        }
 	memcpy(nstr, str, size);
 	return (nstr);
 }
