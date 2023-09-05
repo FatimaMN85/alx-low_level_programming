@@ -112,7 +112,7 @@ char **strtow(char *str)
 	}
 	word_array[num_words] = NULL;
 	if (num_words == 0)
-		return NULL;
+		return (NULL);
 	else
 		return (word_array);
 }
