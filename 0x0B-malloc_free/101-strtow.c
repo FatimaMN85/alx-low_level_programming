@@ -57,7 +57,7 @@ char *duplicate_word(char *str)
 	word = (char *)malloc(sizeof(char) * (len + 1));
 	if (word == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	for (i = 0; i < len; i++)
@@ -83,31 +83,26 @@ char **strtow(char *str)
 	in_word = 0;
 	if (str == NULL || *str == '\0')
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	num_words = count_words(str);
 	word_array = (char **)malloc(sizeof(char *) * (num_words + 1));
-
 	if (word_array == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
-
 	while (*str)
 	{
 		if (is_space(*str))
-		{
 			in_word = 0;
-		}
 		else if (in_word == 0)
 		{
 			word_array[word_index++] = duplicate_word(str);
 			if (word_array[word_index - 1] == NULL)
 			{
-				for (i = 0; i < word_index - 1; i++) {
+				for (i = 0; i < word_index - 1; i++)
 					free(word_array[i]);
-				}
 				free(word_array);
 				return (NULL);
 			}
@@ -116,5 +111,8 @@ char **strtow(char *str)
 		str++;
 	}
 	word_array[num_words] = NULL;
-	return (word_array);
+	if (num_words == 0)
+		return NULL;
+	else
+		return (word_array);
 }
