@@ -39,6 +39,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	strcpy(new_str, s1);
 	strncat(new_str, s2, n);
-
 	return (new_str);
 }
