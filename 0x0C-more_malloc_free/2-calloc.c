@@ -25,6 +25,8 @@ char *my_memset(char *str, char val, unsigned int n_b)
  * _calloc - allocates memory for an array
  * @nmemb: the number of elements of array
  * @size: the size, in bytes, of each element in the array
+ *
+ * Return: pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
