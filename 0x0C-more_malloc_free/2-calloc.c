@@ -7,6 +7,8 @@
  * @str: string
  * @val: the value
  * @n_b: The number of bytes in the memory block
+ *
+ * Return: string
  */
 char *my_memset(char *str, char val, unsigned int n_b)
 {
