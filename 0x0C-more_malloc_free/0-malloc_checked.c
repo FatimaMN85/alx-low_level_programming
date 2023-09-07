@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked -  allocates memory using malloc
+ * malloc_checked - allocates memory using malloc
  * @b: param
  */
 void *malloc_checked(unsigned int b)
