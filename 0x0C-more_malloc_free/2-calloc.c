@@ -10,15 +10,14 @@
  */
 void *my_memset(void *ptr, int val, size_t n_b)
 {
-	unsigned char *byt_ptr = (unsigned char *)ptr;
+	unsigned char *p = (unsigned char *)ptr;
 	size_t i;
 
 	for (i = 0; i < n_b; i++)
 	{
-		byt_ptr[i] = (unsigned char)val;
+		p[i] = val;
 	}
-
-	return (ptr);
+	return (p);
 }
 
 /**
