@@ -3,7 +3,9 @@
 
 /**
  * malloc_checked - allocates memory using malloc
- * @b: param
+ * @b: the amount of memory to allocate
+ *
+ * Return: pointer
  */
 void *malloc_checked(unsigned int b)
 {
