@@ -8,6 +8,8 @@
  * @name: dog name
  * @age: dog age
  * @owner: nameowner
+ *
+ * Return: pointer to the new dog structure
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -18,14 +20,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-
 	new_dog->name = strdup(name);
 	if (new_dog->name == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
-
 	new_dog->age = age;
 
 	new_dog->owner = strdup(owner);
