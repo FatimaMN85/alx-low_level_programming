@@ -7,7 +7,7 @@
  * @format: list of types of arguments
  */
 void print_all(const char * const format, ...)
-{       
+{	
 	va_list args;
 	char *str;
 	int i;
