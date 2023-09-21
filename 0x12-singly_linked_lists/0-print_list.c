@@ -4,7 +4,6 @@
 
 /**
  * print_list - prints all the elements of a list
- * @list_t: the list
  * @h: the pointer of the head of the linked list
  *
  * Return: the number of nodes
@@ -27,5 +26,5 @@ size_t print_list(const list_t *h)
 		count++;
 	}
 
-	return(count);
+	return (count);
 }
