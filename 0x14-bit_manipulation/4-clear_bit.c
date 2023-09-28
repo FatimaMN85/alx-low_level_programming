@@ -5,7 +5,7 @@
  * clear_bit - sets the value of a bit to 0 at a given index
  * @n: number
  * @index: the index
- * Ruturn: if it worked, or -1 if an error occurred
+ * Return: if it worked, or -1 if an error occurred
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
@@ -15,8 +15,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 
 	mask = 1UL << index;
-
-	*n = *n & ~mask;
-
+	*n = *n & ~(mask);
 	return (1);
 }
